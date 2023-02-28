@@ -1,0 +1,56 @@
+<app-navbar></app-navbar>
+
+<div id="header">
+  <app-featured-movie></app-featured-movie>
+</div>
+
+
+  <div class="container">
+    <h1 class="heading" style="margin-top: 50px;"  >weekly top </h1>
+
+    <div class="row">
+        <div class="card text-bg-dark" *ngFor="let film of movie_weekly">
+          <h5 class="card-title">   {{film.title}}{{film.name}}</h5>
+
+          <div class="card-top">
+            <img src="{{image_prefix}}{{film.poster_path}} " class="card-img" alt="...">
+
+            <p class="card__title"></p>
+
+          </div>
+          <div class="card__info">
+            <p class="episode__type">{{film.release_date}}</p>
+          </div>
+          <div class="card__btns">
+            <button class="add-btn">{{film.vote_average}}</button>
+            <button routerLink="details/{{film.id}}" class="watch-btn">See More</button>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="must_watch row">
+<div class="container">
+    <h1 class="heading" >Worth Watching</h1>
+
+</div>  <div class="rowposter">
+  <ng-container *ngFor="let item of top_rated  ">
+        <img class="rowimage" src="{{image_prefix}}{{item.poster_path}}" alt="">
+  </ng-container>
+</div>
+</div>
+
+
+<app-slide></app-slide>
+
+
+<!-- <div *ngFor="let item of pagenation | paginate: { itemsPerPage: 10, currentPage: p } | slice: ((p-1) * 10)">
+
+  <img class="rowimage" src="{{image_prefix}}{{item.poster_path}}" alt="">
+
+
+</div>
+
+<pagination-controls (pageChange)="p = $event"></pagination-controls> -->
+
+<app-footer></app-footer>
+

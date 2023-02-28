@@ -1,0 +1,24 @@
+.heading {
+  letter-spacing: 8px;
+  font-size: 40px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: turquoise;
+  font-family: "Bebas Neue", cursive;
+}
+.heading:hover{
+  translate: 6px;
+}
+.card-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 80px;
+  letter-spacing: 8px;
+  color: #ffffff;
+}
+.card-text {
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+}
+.card-img-overlay {
+  overflow: hidden;
+}

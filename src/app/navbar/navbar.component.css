@@ -1,0 +1,19 @@
+.collapse
+{
+  justify-content: end;
+}
+
+a{
+  font-family: 'Fugaz One', cursive;
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+}
+span
+{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: turquoise;
+  color: transparent;
+}
+a:hover{
+color: white;
+}

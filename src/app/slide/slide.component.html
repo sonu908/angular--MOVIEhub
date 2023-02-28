@@ -1,0 +1,68 @@
+<div class="must_watch row">
+  <div class="container">
+    <h1 class="heading" >Upcomming Movies </h1>
+
+  </div>
+  <div class="rowposter">
+    <ng-container *ngFor="let item of upcommingmovie  ">
+    <div>
+      <img routerLink="details/{{item.id}}" class="rowimage" src="{{image_prefix}}{{item.backdrop_path}}" alt="">
+      <p style="margin-left: 13px; color: aquamarine;"> {{item.title}} </p>
+
+    </div>
+    </ng-container>
+  </div>
+</div>
+
+
+
+<div class="must_watch row">
+  <div class="container">
+    <h1 class="heading">These Will Give You Chills</h1>
+
+  </div>
+  <div class="rowposter">
+    <ng-container *ngFor="let item of Anime  ">
+      <img routerLink="details/{{item.id}}" class="rowimage" src="{{image_prefix}}{{item.poster_path}}" alt="">
+    </ng-container>
+  </div>
+</div>
+
+
+
+<div class="must_watch row">
+  <div class="container">
+    <h1 class="heading">Romance</h1>
+
+  </div>
+  <div class="rowposter">
+    <ng-container *ngFor="let item of romantic_movies  ">
+      <img routerLink="details/{{item.id}}" class="rowimage" src="{{image_prefix}}{{item.poster_path}}" alt="">
+    </ng-container>
+  </div>
+</div>
+
+<div class="must_watch row">
+  <div class="container">
+    <h1 class="heading">FANTASY</h1>
+
+  </div>
+  <div class="rowposter">
+    <ng-container *ngFor="let item of fantasymovies  ">
+      <img routerLink="details/{{item.id}}" class="rowimage" src="{{image_prefix}}{{item.poster_path}}" alt="">
+    </ng-container>
+  </div>
+</div>
+
+
+<div class="must_watch row">
+  <div class="container">
+    <h1 class="heading">WAR</h1>
+
+  </div>
+  <div class="rowposter">
+    <ng-container *ngFor="let item of warmovies  ">
+      <img routerLink="details/{{item.id}}" class="rowimage" src="{{image_prefix}}{{item.poster_path}}" alt="">
+    </ng-container>
+  </div>
+</div>

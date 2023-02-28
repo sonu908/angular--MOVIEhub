@@ -1,0 +1,21 @@
+.card{
+  background-color: #212529;
+  color: white;
+}
+.card-title
+{
+  letter-spacing: 5px;
+  color: aquamarine;
+}
+.card-text
+{
+  opacity: 60%;
+font-family: 'Times New Roman', Times, serif;
+}
+.card-text span{
+  letter-spacing: 4px;
+}
+.card-body a{
+  text-decoration: none;
+  color: aquamarine;
+}

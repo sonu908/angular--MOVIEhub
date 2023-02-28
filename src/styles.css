@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  scroll-behavior: smooth;
+  font-family: "Bebas Neue", cursive;
+  transition: all 0.5s ease;
+}
+::-webkit-scrollbar
+{
+visibility: hidden;
+}
+body
+{
+  background-color:  #000000;
+}

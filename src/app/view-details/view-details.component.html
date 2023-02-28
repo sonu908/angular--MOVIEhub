@@ -1,0 +1,52 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid">
+  <div class="card text-bg-dark">
+    <img src="{{image_prefix}}{{movieresult.backdrop_path}}" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h1 class="card-title">{{movieresult.title}}</h1>
+      <p class="card-text">{{movieresult.overview}}</p>
+      <p class="card-text2"><small>{{movieresult.tagline}}</small></p>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid">
+    <div class="must_watch row">
+      <div class="container">
+        <h1 class="heading">TOP CAST</h1>
+
+
+        <div class="rowposter">
+          <ng-container *ngFor="let item of crewdetails  ">
+            <div>
+              <img class="rowimage" src="{{image_prefix}}{{item.profile_path}}" alt="">
+              <p style="color: aliceblue;">{{item.name}}</p>
+              <!-- <h5>as</h5> <br> -->
+              <p style="color: aquamarine;" >
+                {{item.character}}
+              </p>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<h1 class="heading" style="margin-left: 60px;">movies like these</h1>
+
+<div id="row" class="row">
+  <div class="card1 " style="border-radius: 20px;" *ngFor="let film of relatedmovies">
+    <h6 class="card-title1" style="color: aquamarine;">{{film.title}}{{film.name}}</h6>
+    <div class="card-top1">
+      <img src="{{image_prefix}}{{film.poster_path}} " class="card-img" alt="...">
+    </div>
+  </div>
+</div>
